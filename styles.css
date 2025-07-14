@@ -1,0 +1,59 @@
+/* Fondo negro y fuente clara */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor de la malla en formato de grilla */
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Estilo de cada ramo */
+.ramo {
+  background-color: #111;
+  border: 2px solid #444;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  min-width: 120px;
+  min-height: 70px;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  white-space: pre-line;
+}
+
+/* Efecto al pasar el cursor */
+.ramo:hover {
+  border-color: #39ff14; /* verde fluorescente */
+}
+
+/* Ramos aprobados */
+.ramo.aprobado {
+  background-color: #39ff14;
+  color: #000;
+  border-color: #39ff14;
+}
+
+/* Ramos bloqueados */
+.ramo.bloqueado {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Título de cada semestre */
+.semestre {
+  grid-column: span 11;
+  font-size: 20px;
+  text-align: left;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
