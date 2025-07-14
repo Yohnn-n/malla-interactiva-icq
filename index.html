@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva Ingeniería Química</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <h1>Malla Curricular Interactiva</h1>
+  <div class="malla">
+    <!-- PRIMER AÑO -->
+    <div class="ramo" data-nombre="Fundamentos de procesos químicos" data-requisitos="">Fund. procesos químicos</div>
+    <div class="ramo" data-nombre="Desarrollo personal y comunicación para ingeniería" data-requisitos="">Desarrollo personal</div>
+    <div class="ramo" data-nombre="Fundamentos de matemáticas para ingeniería" data-requisitos="">Fund. matemáticas</div>
+    <div class="ramo" data-nombre="Química para ingeniería" data-requisitos="">Química ing.</div>
+    <div class="ramo" data-nombre="Antropología cristiana" data-requisitos="">Antropología</div>
+
+    <div class="ramo bloqueado" data-nombre="Fundamentos de ingeniería" data-requisitos="Fundamentos de procesos químicos">Fund. ingeniería</div>
+    <div class="ramo bloqueado" data-nombre="Cálculo diferencial e integral" data-requisitos="Fundamentos de matemáticas para ingeniería">Cálculo dif. e int.</div>
+    <div class="ramo bloqueado" data-nombre="Química inorgánica" data-requisitos="Química para ingeniería">Química inorgánica</div>
+    <div class="ramo" data-nombre="Formación fundamental 1" data-requisitos="">Formación fund. 1</div>
+
+    <!-- SEGUNDO AÑO -->
+    <div class="ramo bloqueado" data-nombre="Balance de materia" data-requisitos="Fundamentos de ingeniería">Balance de materia</div>
+    <div class="ramo bloqueado" data-nombre="Física para ingeniería" data-requisitos="Cálculo diferencial e integral">Física ing.</div>
+    <div class="ramo bloqueado" data-nombre="Economía" data-requisitos="Fundamentos de matemáticas para ingeniería">Economía</div>
+    <div class="ramo bloqueado" data-nombre="Cálculo en varias variables" data-requisitos="Cálculo diferencial e integral">Cálculo varias var.</div>
+    <div class="ramo" data-nombre="Inglés 1" data-requisitos="">Inglés 1</div>
+
+    <div class="ramo bloqueado" data-nombre="Elementos de físico química" data-requisitos="Fundamentos de ingeniería">Elem. físico química</div>
+    <div class="ramo bloqueado" data-nombre="Métodos estadísticos en ingeniería" data-requisitos="Cálculo en varias variables">Métodos estadísticos</div>
+    <div class="ramo bloqueado" data-nombre="Ecuaciones diferenciales" data-requisitos="Cálculo en varias variables">Ecuaciones dif.</div>
+    <div class="ramo bloqueado" data-nombre="Química orgánica industrial" data-requisitos="Química para ingeniería">Química orgánica</div>
+    <div class="ramo bloqueado" data-nombre="Inglés 2" data-requisitos="Inglés 1">Inglés 2</div>
+
+    <!-- TERCER AÑO -->
+    <div class="ramo bloqueado" data-nombre="Termodinámica de procesos" data-requisitos="Elementos de físico química">Termodinámica proc.</div>
+    <div class="ramo bloqueado" data-nombre="Interpretación de planos" data-requisitos="Balance de materia">Interpretación planos</div>
+    <div class="ramo bloqueado" data-nombre="Ciencia de materiales" data-requisitos="Química inorgánica">Ciencia materiales</div>
+    <div class="ramo bloqueado" data-nombre="Administración de la producción" data-requisitos="Economía">Admin. producción</div>
+    <div class="ramo" data-nombre="Formación fundamental 2" data-requisitos="">Formación fund. 2</div>
+    <div class="ramo bloqueado" data-nombre="Inglés 3" data-requisitos="Inglés 2">Inglés 3</div>
+
+    <div class="ramo bloqueado" data-nombre="Termodinámica del equilibrio" data-requisitos="Termodinámica de procesos">Termodinámica equilibrio</div>
+    <div class="ramo bloqueado" data-nombre="Mecánica de fluidos" data-requisitos="Física para ingeniería">Mecánica fluidos</div>
+    <div class="ramo bloqueado" data-nombre="Métodos numéricos en ingeniería" data-requisitos="Ecuaciones diferenciales">Métodos numéricos</div>
+    <div class="ramo bloqueado" data-nombre="Sistemas eléctricos en procesos" data-requisitos="Física para ingeniería">Sistemas eléctricos</div>
+    <div class="ramo bloqueado" data-nombre="Inglés 4" data-requisitos="Inglés 3">Inglés 4</div>
+
+    <!-- CUARTO AÑO -->
+    <div class="ramo bloqueado" data-nombre="Cálculo de procesos químicos" data-requisitos="Termodinámica del equilibrio">Cálculo procesos</div>
+    <div class="ramo bloqueado" data-nombre="Transferencia de calor" data-requisitos="Mecánica de fluidos">Transferencia calor</div>
+    <div class="ramo bloqueado" data-nombre="Laboratorio de química aplicada" data-requisitos="Química orgánica industrial">Lab. química</div>
+    <div class="ramo bloqueado" data-nombre="Prevención de riesgos industriales" data-requisitos="Administración de la producción">Prevención riesgos</div>
+    <div class="ramo" data-nombre="Optativo 1" data-requisitos="">Optativo 1</div>
+    <div class="ramo" data-nombre="Formación fundamental 3" data-requisitos="">Formación fund. 3</div>
+
+    <div class="ramo bloqueado" data-nombre="Reactores químicos 1" data-requisitos="Termodinámica del equilibrio">Reactores Q1</div>
+    <div class="ramo bloqueado" data-nombre="Electroquímica" data-requisitos="Termodinámica del equilibrio">Electroquímica</div>
+    <div class="ramo bloqueado" data-nombre="Transferencia de masa" data-requisitos="Transferencia de calor">Transferencia masa</div>
+    <div class="ramo bloqueado" data-nombre="Ingeniería económica" data-requisitos="Administración de la producción">Ing. económica</div>
+    <div class="ramo" data-nombre="Optativo 2" data-requisitos="">Optativo 2</div>
+    <div class="ramo" data-nombre="Ética cristiana" data-requisitos="">Ética cristiana</div>
+
+    <!-- QUINTO AÑO -->
+    <div class="ramo bloqueado" data-nombre="Reactores químicos 2" data-requisitos="Reactores químicos 1">Reactores Q2</div>
+    <div class="ramo bloqueado" data-nombre="Diseño de equipos" data-requisitos="Ciencia de materiales">Diseño de equipos</div>
+    <div class="ramo bloqueado" data-nombre="Procesos de separación" data-requisitos="Transferencia de masa">Procesos separación</div>
+    <div class="ramo bloqueado" data-nombre="Simulación de procesos químicos" data-requisitos="Métodos numéricos en ingeniería">Simulación procesos</div>
+    <div class="ramo bloqueado" data-nombre="Ingeniería ambiental" data-requisitos="Prevención de riesgos industriales">Ing. ambiental</div>
+
+    <div class="ramo bloqueado" data-nombre="Proyecto de título 1" data-requisitos="Procesos de separación">Proyecto T1</div>
+    <div class="ramo bloqueado" data-nombre="Laboratorio de operaciones unitarias" data-requisitos="Transferencia de masa">Lab. operaciones</div>
+    <div class="ramo bloqueado" data-nombre="Control de procesos químicos" data-requisitos="Simulación de procesos químicos">Control procesos</div>
+    <div class="ramo bloqueado" data-nombre="Diseño de plantas de procesos" data-requisitos="Ingeniería económica">Diseño plantas</div>
+    <div class="ramo" data-nombre="Optativo 3" data-requisitos="">Optativo 3</div>
+
+    <!-- SEXTO AÑO -->
+    <div class="ramo bloqueado" data-nombre="Proyecto de título 2" data-requisitos="Proyecto de título 1">Proyecto T2</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
